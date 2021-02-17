@@ -14,6 +14,10 @@ public class GameSettings : SingletonScriptableObject<GameSettings>
     public int MaxPlayers { get { return _maxPlayers; } }
 
     [SerializeField]
+    private int _minPlayers = 1;
+    public int MinPlayers { get { return _minPlayers; } }
+
+    [SerializeField]
     private string _nickName = "Axel";
     public string NickName {
         get
