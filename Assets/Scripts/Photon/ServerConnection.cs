@@ -7,6 +7,8 @@ public class ServerConnection : MonoBehaviourPunCallbacks
     void Start()
     {
         print("Connecting to server...");
+        //PhotonNetwork.SendRate = 20;
+        //PhotonNetwork.SerializationRate = 5;
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = MasterManager.GameSettings.NickName;
         PhotonNetwork.GameVersion = MasterManager.GameSettings.GameVersion;
